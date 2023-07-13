@@ -1,0 +1,1681 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+a, img {
+  display: block;
+}
+
+html {
+  font-size: 16px;
+}
+
+:root {
+  --red: #e50914;
+  --background: #181818;
+  --cartesBarre: #2f2f2f;
+  --txt: #d2d2d2;
+}
+
+.button {
+  background-color: var(--red);
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+.button a {
+  font-size: 1.4rem;
+  text-align: center;
+  color: white;
+  transition: 0.5s all;
+}
+.button a:hover {
+  transform: scale(1.1);
+}
+
+#navigation {
+  display: none;
+}
+
+header {
+  background: linear-gradient(rgba(16, 16, 16, 0.815), rgba(0, 0, 0, 0)), url(../img/inscription-connexion-background.jpg);
+  background-position: center;
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+header .navBar {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 2%;
+}
+header .navBar .logo {
+  width: 20%;
+}
+header .navBar .logo img {
+  padding: 5%;
+  width: 65%;
+  margin: 0 auto;
+}
+header .navBar .nav {
+  width: 70%;
+}
+header .navBar .nav ul {
+  font-size: 0;
+  display: flex;
+  align-items: center;
+}
+header .navBar .nav ul li {
+  padding: 3%;
+}
+header .navBar .nav ul li a {
+  color: white;
+  font-size: 1.2rem;
+  transition: 0.5s all;
+}
+header .navBar .nav ul li a:hover {
+  transform: scale(1.1);
+}
+header .navBar .btn {
+  width: 20%;
+}
+header .navBar .btn ul {
+  font-size: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+  align-items: center;
+}
+header .navBar .btn ul .button {
+  width: 10vw;
+}
+header .navBar .btn ul .button a {
+  font-size: 1.2rem;
+}
+header .navBar .btn ul .button2 {
+  background-color: #ffffff;
+  width: 10vw;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  margin-left: 5%;
+}
+header .navBar .btn ul .button2 a {
+  font-size: 1.2rem;
+  text-align: center;
+  color: black;
+  transition: 0.5s all;
+}
+header .navBar .btn ul .button2 a:hover {
+  transform: scale(1.1);
+}
+header .accueil {
+  transform: rotateY(180deg);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 8% 0;
+}
+header .accueil .arrow {
+  width: 5%;
+  padding: 2%;
+}
+header .accueil .arrow i {
+  font-size: 4rem;
+  color: white;
+}
+header .accueil .container {
+  width: 45%;
+  color: white;
+}
+header .accueil .container h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin: 3% 0;
+}
+header .accueil .container p {
+  font-size: 1.8rem;
+  margin-bottom: 5%;
+}
+header .accueil .container .classification {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+header .accueil .container .classification .container {
+  display: flex;
+  width: 50%;
+}
+header .accueil .container .classification .container p {
+  font-size: 1.5rem;
+  padding-right: 3%;
+}
+header .accueil .container .classification .container i {
+  font-size: 2rem;
+  padding-right: 2%;
+  align-items: center;
+}
+header .accueil .container .classification .border p {
+  border: solid #ffffff;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 1% 5%;
+  font-size: 1.2rem;
+  margin-right: 2%;
+}
+header .accueil .container .classification .note {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+header .accueil .container .classification .note p {
+  font-size: 2rem;
+  margin-right: 20%;
+}
+header .accueil .container .classification .note .age {
+  border: solid white;
+  border-radius: 25%;
+  text-align: center;
+  padding: 1% 5%;
+}
+header .accueil .container .saison {
+  display: flex;
+  align-items: center;
+}
+header .accueil .container .saison p {
+  margin-right: 3%;
+}
+header .accueil .container .saison .hd {
+  text-transform: uppercase;
+  font-weight: bold;
+  border: #ffffff solid;
+  padding: 0.5% 1%;
+  border-radius: 15%;
+}
+header .accueil .container .btn2 {
+  width: 100%;
+}
+header .accueil .container .btn2 ul {
+  font-size: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .accueil .container .btn2 ul .button {
+  width: 50%;
+}
+header .accueil .container .btn2 ul .buttonList {
+  font-size: 1.4rem;
+  width: 50%;
+  border: solid #ffffff;
+  border-radius: 1rem;
+  height: 6vh;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .accueil .container .btn2 ul .buttonList a {
+  color: white;
+  transition: 0.5s all;
+}
+header .accueil .container .btn2 ul .buttonList a:hover {
+  transform: scale(1.1);
+}
+header .arrow2 {
+  width: 53%;
+  text-align: right;
+  padding: 2%;
+}
+header .arrow2 i {
+  font-size: 4rem;
+  color: white;
+}
+header .carroussel {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2%;
+}
+header .carroussel .point {
+  width: 0.8%;
+  height: 1rem;
+  background-color: #707070;
+  border-radius: 50%;
+  margin: 0.5%;
+}
+header .carroussel .point:nth-child(4) {
+  background-color: var(--red);
+  width: 1%;
+  height: 1.2rem;
+}
+
+main {
+  background-color: #181818;
+}
+main .sorties {
+  width: 80%;
+  margin: 0 auto;
+}
+main .sorties h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  padding: 8% 0 3% 0;
+}
+main .sorties .flexContainer {
+  width: 100%;
+  padding-bottom: 5%;
+  display: flex;
+  align-items: center;
+}
+main .sorties .flexContainer img {
+  width: 50%;
+}
+main .sorties .flexContainer .container {
+  padding: 0 0% 0 5%;
+}
+main .sorties .flexContainer .container h3 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 5%;
+}
+main .sorties .flexContainer .container p {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 8%;
+}
+main .sorties .flexContainer .container .button {
+  align-self: flex-end;
+  width: 20vw;
+}
+main .catalogue {
+  width: 100%;
+  padding-bottom: 2%;
+}
+main .catalogue .flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5%;
+  width: 100%;
+}
+main .catalogue .flexContainer .affiche {
+  display: flex;
+  width: 150%;
+  position: relative;
+  overflow-x: hidden;
+}
+main .catalogue .flexContainer .affiche:before {
+  background: linear-gradient(to right, #181818, transparent);
+  content: "";
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  left: 0;
+}
+main .catalogue .flexContainer .affiche:after {
+  content: "";
+  background: linear-gradient(to right, transparent, #181818);
+  height: 100%;
+  width: 25%;
+  position: absolute;
+  right: 0;
+}
+main .catalogue .flexContainer .affiche .contentImage {
+  width: 50vw;
+  margin-right: 2%;
+}
+main .catalogue .flexContainer .affiche .contentImage img {
+  width: 100%;
+}
+main .catalogue .flexContainer .affiche .second {
+  position: relative;
+}
+main .catalogue .flexContainer .affiche .second:before {
+  content: "\f0d9";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  position: absolute;
+  font-size: 3rem;
+  top: 35%;
+  left: -80%;
+  z-index: 3;
+}
+main .catalogue .flexContainer .affiche .five {
+  position: relative;
+}
+main .catalogue .flexContainer .affiche .five:before {
+  content: "\f0da";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  position: absolute;
+  font-size: 3rem;
+  top: 35%;
+  left: 80%;
+  z-index: 3;
+}
+main .catalogue .button {
+  margin: 0 auto;
+  width: 20vw;
+}
+main .forfait {
+  width: 100%;
+  padding-bottom: 2%;
+}
+main .forfait h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d2d2d2;
+  padding: 8% 0 3% 0;
+  width: 80%;
+  margin: 0 auto;
+}
+main .forfait .flexContainer {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+main .forfait .flexContainer .container {
+  background-color: #2f2f2f;
+  padding: 1.5%;
+  color: #d2d2d2;
+  border-radius: 5%;
+  transition: 0.5s all;
+  margin: 0 1%;
+}
+main .forfait .flexContainer .container:hover {
+  transform: scale(1.12);
+  border-top: #e50914 inset 1.3rem;
+}
+main .forfait .flexContainer .container h3 {
+  font-size: 2.7rem;
+  text-align: center;
+  padding-bottom: 10%;
+}
+main .forfait .flexContainer .container .price {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 20%;
+  font-weight: 600;
+}
+main .forfait .flexContainer .container .price .grey {
+  color: #707070;
+}
+main .forfait .flexContainer .container p {
+  padding: 3% 0;
+  font-size: 1.5rem;
+}
+main .forfait .flexContainer .container p .nonActif {
+  color: #181818;
+}
+main .forfait .button {
+  margin: 5% auto 0 auto;
+  width: 20vw;
+}
+
+footer {
+  width: 100%;
+  background-color: #181818;
+}
+footer .reseaux {
+  padding-top: 5%;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  display: flex;
+}
+footer .reseaux a {
+  margin-right: 2%;
+}
+footer .reseaux a i {
+  color: #d2d2d2;
+}
+footer .flexNav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .flexNav .container ul {
+  font-size: 0;
+}
+footer .flexNav .container ul li {
+  padding-top: 10%;
+}
+footer .flexNav .container ul li a {
+  color: #d2d2d2;
+  font-size: 1.5rem;
+}
+footer .mentions {
+  width: 80%;
+  color: #d2d2d2;
+  margin: 5% auto 0 auto;
+  padding-bottom: 2%;
+}
+
+main {
+  width: 100%;
+}
+main .gestion {
+  width: 100%;
+  background-color: var(--background);
+  height: 100vh;
+}
+main .gestion h1 {
+  color: white;
+  text-align: center;
+  padding: 3%;
+  font-size: 3.5rem;
+  padding: 7% 0 5% 0;
+}
+main .gestion .flexContainer {
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+main .gestion .flexContainer .container {
+  width: 20%;
+}
+main .gestion .flexContainer .container img {
+  width: 100%;
+  margin-bottom: 8%;
+  padding: 25% 12%;
+  border-radius: 1rem;
+}
+main .gestion .flexContainer .container .papa {
+  background: -webkit-linear-gradient(45deg, #2442a3 0%, #3765ea 100%);
+}
+main .gestion .flexContainer .container .maman {
+  background: -webkit-linear-gradient(45deg, #ad9e36 0%, #ead737 100%);
+}
+main .gestion .flexContainer .container .dori {
+  background: -webkit-linear-gradient(45deg, #469511 0%, #42aa04 100%);
+}
+main .gestion .flexContainer p {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+main .gestion .flexContainer .profile {
+  width: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+main .gestion .flexContainer .profile a {
+  margin-top: 25%;
+  width: 100%;
+  margin-bottom: 35%;
+}
+main .gestion .flexContainer .profile a i {
+  font-size: 7rem;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+main .gestion .flexContainer .profile a p {
+  margin-top: 50%;
+}
+main .btn {
+  padding: 8%;
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
+main .btn a {
+  color: white;
+  font-size: 1.8rem;
+  border: solid white;
+  border-radius: 1rem;
+  padding: 2.5%;
+}
+
+main {
+  background-color: var(--background);
+}
+main .edition {
+  padding: 9% 0;
+  width: 40%;
+  margin: 0 auto;
+  height: 100vh;
+}
+main .edition h1 {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5%;
+  border-bottom: white solid 0.1rem;
+}
+main .edition .flexContainer {
+  display: flex;
+}
+main .edition .flexContainer .image {
+  width: 25%;
+  margin-right: 2%;
+  position: relative;
+}
+main .edition .flexContainer .image img {
+  background: -webkit-linear-gradient(45deg, #2442a3 0%, #3765ea 100%);
+  width: 75%;
+  padding: 25% 12%;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+main .edition .flexContainer .image i {
+  color: white;
+  background-color: var(--background);
+  border-radius: 50%;
+  position: absolute;
+  top: 21%;
+  left: 17%;
+  padding: 5%;
+  font-size: 0.8rem;
+}
+main .edition .flexContainer .txt {
+  width: 75%;
+}
+main .edition .flexContainer .txt form {
+  width: 100%;
+}
+main .edition .flexContainer .txt form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  border: 0;
+  background-color: var(--cartesBarre);
+  height: 2rem;
+  font-size: 1rem;
+  padding-left: 2%;
+}
+main .edition .flexContainer .txt form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+main .edition .flexContainer .txt form select {
+  display: block;
+  width: 25%;
+  margin-bottom: 1rem;
+  background-color: var(--cartesBarre);
+  color: #d2d2d2;
+  border: 0;
+  height: 2rem;
+  font-size: 1rem;
+  padding-left: 2%;
+}
+main .edition .flexContainer .txt form p {
+  color: white;
+  margin-bottom: 2%;
+  line-height: 150%;
+}
+main .edition .flexContainer .txt form a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+main .edition .flexContainer .txt h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+main .edition .flexContainer .txt .age {
+  display: flex;
+}
+main .edition .flexContainer .txt .age p {
+  color: #d2d2d2;
+  background-color: var(--cartesBarre);
+  margin-right: 3%;
+  padding: 2%;
+  width: 10vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+main .edition .flexContainer .txt .age a {
+  color: white;
+  border: solid 2px white;
+  align-self: center;
+  padding: 2%;
+  width: 10vw;
+  text-align: center;
+}
+main .edition .flexContainer .txt .btn {
+  display: flex;
+  width: 120%;
+  padding: 0;
+  margin-top: 5%;
+  z-index: 3;
+}
+main .edition .flexContainer .txt .btn a {
+  color: white;
+  border: solid, white, 2px;
+  border-radius: 0;
+  margin-right: 2%;
+  font-size: 1.4rem;
+  width: 85%;
+}
+main .edition .flexContainer .txt .btn .white {
+  background-color: white;
+  color: #000000;
+}
+
+main .inscriptionConnexion {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.9764705882) 30%, transparent), url(../img/inscription-connexion-background.jpg);
+  background-position: center;
+  background-size: cover;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .inscriptionConnexion .navBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: rotateY(180deg);
+  margin-bottom: 2%;
+  padding: 2%;
+}
+main .inscriptionConnexion .navBar .logo {
+  width: 20%;
+  padding: 1%;
+}
+main .inscriptionConnexion .navBar .logo img {
+  width: 100%;
+}
+main .inscriptionConnexion .navBar .boutton {
+  width: 50%;
+}
+main .inscriptionConnexion .navBar .boutton ul {
+  font-size: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2%;
+  align-items: center;
+}
+main .inscriptionConnexion .navBar .boutton ul .button {
+  width: 12vw;
+}
+main .inscriptionConnexion .navBar .boutton ul .button a {
+  font-size: 1.5rem;
+}
+main .inscriptionConnexion .navBar .boutton ul .button2 {
+  background-color: #ffffff;
+  width: 12vw;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  margin-left: 5%;
+}
+main .inscriptionConnexion .navBar .boutton ul .button2 a {
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+  transition: 0.5s all;
+}
+main .inscriptionConnexion .navBar .boutton ul .button2 a:hover {
+  transform: scale(1.1);
+}
+main .inscriptionConnexion .form {
+  transform: rotateY(180deg);
+  background-color: var(--background);
+  opacity: 0.8;
+  width: 35%;
+  margin-left: 55%;
+  align-self: center;
+  border-radius: 1rem;
+}
+main .inscriptionConnexion .form form {
+  width: 100%;
+  padding: 3%;
+  margin-bottom: 10%;
+}
+main .inscriptionConnexion .form form fieldset {
+  border: 0;
+}
+main .inscriptionConnexion .form form .flex {
+  display: flex;
+  flex-direction: column;
+}
+main .inscriptionConnexion .form form .flex2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+main .inscriptionConnexion .form form .flex2 a {
+  background-color: white;
+  width: 50%;
+  text-align: center;
+  color: black;
+  padding: 2%;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+main .inscriptionConnexion .form form .flex2 .input {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+main .inscriptionConnexion .form form .flex2 .input input[type=checkbox] {
+  display: none;
+}
+main .inscriptionConnexion .form form .flex2 .input input[type=checkbox] + label {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 0.3rem solid #ccc;
+  border-style: dashed;
+  cursor: pointer;
+}
+main .inscriptionConnexion .form form .flex2 .input input[type=checkbox]:checked + label {
+  background-color: rgba(241, 122, 122, 0.225);
+}
+main .inscriptionConnexion .form form .flex2 p {
+  color: white;
+  width: 50%;
+  text-align: center;
+  font-size: 1rem;
+}
+main .inscriptionConnexion .form form h1 {
+  text-align: center;
+  padding: 1% 0;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 5%;
+}
+main .inscriptionConnexion .form form label {
+  margin-bottom: 3%;
+  font-size: 1.2rem;
+  color: white;
+}
+main .inscriptionConnexion .form form input, main .inscriptionConnexion .form form select {
+  font-size: 1.1rem;
+  padding-left: 1vw;
+  border-radius: 0.5rem;
+  border: 0;
+  height: 5vh;
+  font-style: italic;
+  color: #d2d2d2;
+  background-color: var(--cartesBarre);
+  margin-bottom: 4%;
+}
+main .inscriptionConnexion .form form select {
+  padding: 2%;
+  font-weight: 200;
+}
+main .inscriptionConnexion .form form .google {
+  position: relative;
+}
+main .inscriptionConnexion .form form .google .line {
+  background-color: white;
+  width: 40%;
+  height: 0.3vh;
+  position: absolute;
+  top: 15%;
+}
+main .inscriptionConnexion .form form .google .line2 {
+  background-color: white;
+  width: 10%;
+  height: 0.3vh;
+  position: absolute;
+  top: 15%;
+  width: 40%;
+  right: 0;
+}
+main .inscriptionConnexion .form form .google h3 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin: 5% 0;
+  text-transform: uppercase;
+}
+main .inscriptionConnexion .form form .google a {
+  background-color: white;
+  color: #000000;
+  width: 100%;
+  text-align: center;
+  padding: 2%;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+main .inscriptionConnexion .form form .name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+main .inscriptionConnexion .form form .name p {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 49%;
+}
+main .inscriptionConnexion .form form .mail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .inscriptionConnexion .form form .tel {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .inscriptionConnexion .form form .tel label {
+  width: 100%;
+}
+main .inscriptionConnexion .form form .tel select {
+  width: 13%;
+  margin-right: 2%;
+}
+main .inscriptionConnexion .form form .tel input {
+  width: 85%;
+}
+main .inscriptionConnexion .form form .dateNaissance {
+  display: flex;
+  flex-direction: column;
+}
+main .inscriptionConnexion .form form .compte {
+  display: flex;
+  margin-bottom: 2%;
+}
+main .inscriptionConnexion .form form .compte p {
+  margin-right: 2%;
+  color: #bbbbbb;
+}
+main .inscriptionConnexion .form form .compte a {
+  color: white;
+  font-weight: 700;
+}
+main .inscriptionConnexion .form form .btnSubmit {
+  width: 100%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: white;
+  color: #000000;
+  margin: 0;
+}
+
+.homeRegister .video {
+  position: relative;
+}
+.homeRegister .video iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 120vh;
+}
+.homeRegister .navBar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 2%;
+}
+.homeRegister .navBar .logo {
+  width: 20%;
+}
+.homeRegister .navBar .logo img {
+  padding: 5%;
+  width: 65%;
+  margin: 0 auto;
+}
+.homeRegister .navBar .nav {
+  width: 50%;
+}
+.homeRegister .navBar .nav ul {
+  font-size: 0;
+  display: flex;
+  align-items: center;
+}
+.homeRegister .navBar .nav ul li {
+  padding: 3%;
+}
+.homeRegister .navBar .nav ul li a {
+  color: white;
+  font-size: 1.2rem;
+  transition: 0.5s all;
+}
+.homeRegister .navBar .nav ul li a:hover {
+  transform: scale(1.1);
+}
+.homeRegister .navBar .btn {
+  width: 30%;
+}
+.homeRegister .navBar .btn ul {
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10%;
+}
+.homeRegister .navBar .btn ul li {
+  font-size: 1.2rem;
+  display: flex;
+  margin-right: 5%;
+}
+.homeRegister .navBar .btn ul li .sous {
+  display: none;
+  transition: 2s all;
+}
+.homeRegister .navBar .btn ul li:hover .sous {
+  display: block;
+  position: absolute;
+  right: 5%;
+  top: 12%;
+  width: 20vw;
+}
+.homeRegister .navBar .btn ul li:hover .sous li {
+  background-color: var(--cartesBarre);
+  display: flex;
+  padding: 3%;
+  width: 100%;
+}
+.homeRegister .navBar .btn ul li:hover .sous li .maman {
+  background: -webkit-linear-gradient(45deg, #ad9e36 0%, #ead737 100%);
+  width: 15%;
+  padding: 2%;
+  border-radius: 0.5rem;
+  margin: 2%;
+  height: 5vh;
+}
+.homeRegister .navBar .btn ul li:hover .sous li .dori {
+  background: -webkit-linear-gradient(45deg, #469511 0%, #42aa04 100%);
+  width: 15%;
+  padding: 2%;
+  height: 5vh;
+  border-radius: 0.5rem;
+  margin: 2%;
+}
+.homeRegister .navBar .btn ul li:hover .sous li a {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+.homeRegister .navBar .btn ul li:hover .sous li i {
+  margin-right: 5%;
+}
+.homeRegister .navBar .btn ul li:hover .sous .deco {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  border-top: white solid 0.1rem;
+}
+.homeRegister .navBar .btn ul li:hover .sous .deco a {
+  padding-top: 2%;
+}
+.homeRegister .navBar .btn ul li input {
+  background-color: transparent;
+  border: 0;
+}
+.homeRegister .navBar .btn ul li i {
+  color: white;
+  font-size: 1.5rem;
+}
+.homeRegister .navBar .btn ul li a {
+  display: flex;
+  align-items: center;
+}
+.homeRegister .navBar .btn ul li a img {
+  background: -webkit-linear-gradient(45deg, #2442a3 0%, #3765ea 100%);
+  width: 45%;
+  padding: 7%;
+  height: 5vh;
+  border-radius: 0.5rem;
+}
+.homeRegister .navBar .btn ul li .fleche:after {
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  margin-left: 2%;
+  transition: 0.5s all;
+}
+.homeRegister .navBar .btn ul li .fleche:hover:after {
+  content: "\f0d8";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  margin-left: 2%;
+}
+.homeRegister .accueil {
+  width: 40%;
+  margin-left: 8%;
+  color: white;
+}
+.homeRegister .accueil p {
+  font-size: 1.4rem;
+  margin: 5% 0;
+}
+.homeRegister .accueil .classification {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.homeRegister .accueil .classification .container {
+  display: flex;
+  width: 50%;
+}
+.homeRegister .accueil .classification .container p {
+  font-size: 1.5rem;
+  padding-right: 1%;
+}
+.homeRegister .accueil .classification .container i {
+  font-size: 2rem;
+  padding-right: 2%;
+  align-items: center;
+}
+.homeRegister .accueil .classification .border p {
+  border: solid #ffffff;
+  border-radius: 1.8rem;
+  text-align: center;
+  padding: 1% 5%;
+  font-size: 1.2rem;
+  margin-right: 2%;
+}
+.homeRegister .accueil .classification .note {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+.homeRegister .accueil .classification .note p {
+  font-size: 1.8rem;
+  margin-right: 5%;
+}
+.homeRegister .accueil .classification .note .age {
+  border: solid white;
+  border-radius: 25%;
+  text-align: center;
+  padding: 1% 5%;
+}
+.homeRegister .accueil .saison {
+  display: flex;
+  align-items: center;
+}
+.homeRegister .accueil .saison p {
+  margin-right: 3%;
+}
+.homeRegister .accueil .saison .hd {
+  text-transform: uppercase;
+  font-weight: bold;
+  border: #ffffff solid;
+  padding: 0.5% 1%;
+  border-radius: 15%;
+}
+.homeRegister .accueil .btn2 {
+  width: 100%;
+  margin-bottom: 25%;
+}
+.homeRegister .accueil .btn2 ul {
+  font-size: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.homeRegister .accueil .btn2 ul .button {
+  width: 50%;
+}
+.homeRegister .accueil .btn2 ul .buttonList {
+  font-size: 1.4rem;
+  width: 50%;
+  border: solid #ffffff;
+  border-radius: 1rem;
+  height: 6vh;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeRegister .accueil .btn2 ul .buttonList a {
+  color: white;
+  transition: 0.5s all;
+}
+.homeRegister .accueil .btn2 ul .buttonList a:hover {
+  transform: scale(1.1);
+}
+.homeRegister .liste {
+  background-color: var(--background);
+  padding-left: 2%;
+  position: relative;
+}
+.homeRegister .liste h2 {
+  font-size: 1.7rem;
+  color: white;
+  position: absolute;
+  top: -22%;
+}
+.homeRegister .liste .flexContainer {
+  display: flex;
+  height: 24vh;
+}
+.homeRegister .liste .flexContainer .affiche {
+  display: flex;
+  height: 24vh;
+  width: 100vw;
+  position: abs;
+  overflow-y: hidden;
+  position: absolute;
+  top: -5%;
+}
+.homeRegister .liste .flexContainer .affiche:after {
+  content: "";
+  background: linear-gradient(to right, transparent 10%, #181818);
+  width: 25%;
+  height: 18vh;
+  position: absolute;
+  right: 0;
+}
+.homeRegister .liste .flexContainer .affiche .contentImage {
+  width: 18%;
+}
+.homeRegister .liste .flexContainer .affiche .contentImage img {
+  width: 100%;
+  height: 18vh;
+}
+.homeRegister .liste .flexContainer .affiche .last {
+  width: 15%;
+  position: relative;
+}
+.homeRegister .liste .flexContainer .affiche .last:before {
+  content: "\f0da";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 30%;
+  right: 70%;
+  color: white;
+  font-size: 3rem;
+  z-index: 2;
+}
+.homeRegister .topSeries {
+  background-color: var(--background);
+  padding-left: 2%;
+}
+.homeRegister .topSeries h3 {
+  font-size: 1.7rem;
+  color: white;
+}
+.homeRegister .topSeries .flexContainer {
+  width: 100%;
+}
+.homeRegister .topSeries .flexContainer .top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.homeRegister .topSeries .flexContainer .top:after {
+  content: "";
+  background: linear-gradient(to right, transparent 10%, #181818);
+  width: 15%;
+  height: 24vh;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+.homeRegister .topSeries .flexContainer .container {
+  display: flex;
+  width: 15%;
+  align-items: center;
+  margin-right: 1.5%;
+}
+.homeRegister .topSeries .flexContainer .container img {
+  height: 18vh;
+  z-index: 3;
+}
+.homeRegister .topSeries .flexContainer .container p {
+  width: 100%;
+  color: white;
+  font-size: 14rem;
+  font-weight: 600;
+  transform: translateX(35%);
+}
+.homeRegister .topSeries .flexContainer .last {
+  position: relative;
+}
+.homeRegister .topSeries .flexContainer .last:before {
+  content: "\f0da";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 45%;
+  right: 100%;
+  color: white;
+  font-size: 3rem;
+  z-index: 5;
+}
+.homeRegister .reprendre {
+  background-color: var(--background);
+  padding-left: 2%;
+}
+.homeRegister .reprendre h3 {
+  font-size: 1.7rem;
+  color: white;
+  margin-bottom: 2%;
+}
+.homeRegister .reprendre .flexContainer {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  padding-bottom: 5%;
+}
+.homeRegister .reprendre .flexContainer .container {
+  width: 29%;
+}
+.homeRegister .reprendre .flexContainer .container .line {
+  width: 94%;
+  margin: 5% 3%;
+  background-color: var(--cartesBarre);
+  height: 0.2rem;
+}
+.homeRegister .reprendre .flexContainer .container .ensLine {
+  display: flex;
+  margin: 5% 3%;
+  width: 94%;
+}
+.homeRegister .reprendre .flexContainer .container .ensLine .line1 {
+  background-color: var(--red);
+  height: 0.2rem;
+  width: 25%;
+}
+.homeRegister .reprendre .flexContainer .container .ensLine .line2 {
+  background-color: var(--cartesBarre);
+  height: 0.2rem;
+  width: 75%;
+}
+.homeRegister .reprendre .flexContainer .container .ensLine .line3 {
+  background-color: var(--red);
+  height: 0.2rem;
+  width: 75%;
+}
+.homeRegister .reprendre .flexContainer .container .ensLine .line4 {
+  background-color: var(--cartesBarre);
+  height: 0.2rem;
+  width: 25%;
+}
+.homeRegister .reprendre .flexContainer .container img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 9px;
+  }
+  .button {
+    height: 4vh;
+  }
+  header .navBar .logo {
+    width: 25%;
+  }
+  header .navBar .btn ul .button2 {
+    height: 4vh;
+  }
+  header .accueil .container .btn2 ul .buttonList {
+    height: 4vh;
+    border: solid 3px;
+  }
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+  .button {
+    height: 3vh;
+  }
+  #toggle {
+    position: fixed;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 6%;
+    right: 10%;
+    cursor: pointer;
+    background-color: var(--red);
+    transition: all 0.3s ease-in-out;
+    z-index: 25;
+  }
+  #toggle:before, #toggle:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--red);
+    transition: all 0.3s ease-in-out;
+  }
+  #toggle:before {
+    top: -10px;
+  }
+  #toggle:after {
+    top: 10px;
+  }
+  #toggle.active {
+    background-color: transparent;
+  }
+  #toggle.active:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  #toggle.active:after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  #navigation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    top: 0;
+  }
+  #navigation.active {
+    right: 0;
+  }
+  #navigation.active ul li {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  #navigation.active ul li a {
+    color: indianred;
+    font-size: 24px;
+    text-align: center;
+  }
+  header .navBar .logo {
+    width: 35%;
+  }
+  header .navBar .nav {
+    display: none;
+  }
+  header .navBar .btn {
+    display: none;
+  }
+  header .accueil .container .classification .border p {
+    border: 1.5px solid;
+  }
+  header .accueil .container .classification .border .container .age p {
+    border: none;
+  }
+  header .accueil .container .btn2 ul .buttonList {
+    height: 3vh;
+    border: solid 1.5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 7px;
+  }
+  main .sorties {
+    width: 100%;
+    margin: 0;
+  }
+  main .sorties h2 {
+    text-align: center;
+  }
+  main .sorties .flexContainer {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main .sorties .flexContainer img {
+    width: 75%;
+    margin-bottom: 2%;
+  }
+  main .sorties .flexContainer .container {
+    text-align: center;
+    margin-right: 3%;
+  }
+  main .sorties .button {
+    margin: 0 auto;
+  }
+  main .sorties .button a {
+    font-size: 2rem;
+  }
+  main .catalogue .button a {
+    font-size: 2rem;
+  }
+  main .forfait .flexContainer {
+    flex-wrap: wrap;
+  }
+  main .forfait .flexContainer .container {
+    width: 80%;
+    margin-bottom: 5%;
+  }
+  main .forfait .flexContainer .container h3 {
+    font-size: 4rem;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+  }
+  main .forfait .flexContainer .container .price {
+    font-size: 3.5rem;
+    padding-bottom: 4%;
+  }
+  main .forfait .flexContainer .container p {
+    font-size: 3rem;
+    text-align: center;
+  }
+  main .forfait .button a {
+    font-size: 2rem;
+  }
+  footer .reseaux {
+    width: 100%;
+    justify-content: center;
+  }
+  footer .reseaux a {
+    margin-right: 5%;
+  }
+  footer .reseaux a i {
+    font-size: 5rem;
+  }
+  footer .mentions {
+    text-align: center;
+    font-size: 2rem;
+  }
+  footer .flexNav {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 5px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main .inscriptionConnexion .form {
+    height: 75vh;
+  }
+  main .inscriptionConnexion .form form h1 {
+    margin: 10% 0%;
+    font-size: 2.5rem;
+  }
+  main .inscriptionConnexion .form form label {
+    font-size: 1.5rem;
+  }
+  main .inscriptionConnexion .form form input, main .inscriptionConnexion .form form select {
+    font-size: 1.5rem;
+  }
+  main .inscriptionConnexion .form form select {
+    padding: 0;
+  }
+  main .inscriptionConnexion .form form .google a {
+    font-size: 1.5rem;
+  }
+  main .inscriptionConnexion .form form .google h3 {
+    font-size: 2.5rem;
+  }
+  main .inscriptionConnexion .form form .flex2 {
+    margin-top: 7%;
+  }
+  main .inscriptionConnexion .form form .flex2 p {
+    font-size: 1.5rem;
+  }
+  main .inscriptionConnexion .form form .flex2 a {
+    font-size: 1.5rem;
+  }
+  main .inscriptionConnexion .form form .compte {
+    margin: 7% 0;
+  }
+  main .inscriptionConnexion .form form .compte p {
+    font-size: 1.5rem;
+  }
+  main .inscriptionConnexion .form form .compte a {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main .inscriptionConnexion .navBar .boutton ul .button2 {
+    height: 4vh;
+  }
+  main .inscriptionConnexion .form form h1 {
+    margin: 10% 0%;
+    font-size: 2.5rem;
+  }
+  main .inscriptionConnexion .form form label {
+    font-size: 1.5rem;
+  }
+  main .inscriptionConnexion .form form input, main .inscriptionConnexion .form form select {
+    font-size: 1.5rem;
+  }
+  main .inscriptionConnexion .form form select {
+    padding: 0;
+  }
+  main .inscriptionConnexion .form form .google a {
+    font-size: 1.5rem;
+  }
+  main .inscriptionConnexion .form form .google h3 {
+    font-size: 2.5rem;
+  }
+  main .inscriptionConnexion .form form .flex2 {
+    margin-top: 7%;
+  }
+  main .inscriptionConnexion .form form .flex2 p {
+    font-size: 1.5rem;
+  }
+  main .inscriptionConnexion .form form .flex2 a {
+    font-size: 1.5rem;
+  }
+  main .inscriptionConnexion .form form .compte {
+    margin: 7% 0;
+  }
+  main .inscriptionConnexion .form form .compte p {
+    font-size: 1.5rem;
+  }
+  main .inscriptionConnexion .form form .compte a {
+    font-size: 1.5rem;
+  }
+  main .inscriptionConnexion .form form .btnSubmit {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .inscriptionConnexion {
+    background: linear-gradient(rgba(16, 16, 16, 0.815), rgba(0, 0, 0, 0)), url(../img/inscription-connexion-background.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  main .inscriptionConnexion .navBar {
+    margin-bottom: 15%;
+  }
+  main .inscriptionConnexion .navBar .boutton ul .button2 {
+    height: 3vh;
+  }
+  main .inscriptionConnexion .form {
+    width: 65%;
+    margin: 0;
+    opacity: 0.94;
+  }
+}
+@media screen and (max-width: 425px) {
+  main .inscriptionConnexion .form {
+    width: 80%;
+  }
+  main .inscriptionConnexion .form form h1 {
+    margin: 10% 0%;
+    font-size: 4rem;
+  }
+  main .inscriptionConnexion .form form label {
+    font-size: 3rem;
+  }
+  main .inscriptionConnexion .form form input, main .inscriptionConnexion .form form select {
+    font-size: 2.5rem;
+  }
+  main .inscriptionConnexion .form form select {
+    padding: 0;
+  }
+  main .inscriptionConnexion .form form .google a {
+    font-size: 2.5rem;
+  }
+  main .inscriptionConnexion .form form .google h3 {
+    font-size: 3rem;
+  }
+  main .inscriptionConnexion .form form .flex2 {
+    margin-top: 7%;
+  }
+  main .inscriptionConnexion .form form .flex2 p {
+    font-size: 2.5rem;
+  }
+  main .inscriptionConnexion .form form .flex2 a {
+    font-size: 2.5rem;
+  }
+  main .inscriptionConnexion .form form .compte {
+    margin: 7% 0;
+  }
+  main .inscriptionConnexion .form form .compte p {
+    font-size: 2.5rem;
+  }
+  main .inscriptionConnexion .form form .compte a {
+    font-size: 2.5rem;
+  }
+  main .inscriptionConnexion .form form .btnSubmit {
+    font-size: 2.5rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Accueil Netflix</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/5fa515c205.js" crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="toggle"></div>
+        <div id="navigation">
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Catalogue</a></li>
+                <li><a href="">Tarifs</a></li>
+                <li ><a href="connexion.html" >Connexion</a></li>
+                <li class ="button2"><a href="inscription.html" >Inscription</a></li>
+            </ul>
+        </div>
+    <!-- Navbar -->
+    <header>
+        
+        <div class="navBar">
+            <div class="logo">
+                <a href="index.html">-<img src="img/logo_netflix.svg" alt="logo de Netflix"></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="#catalogue">Catalogue</a></li>
+                    <li><a href="#forfait">Tarifs</a></li>
+                </ul>
+            </div>
+            <div class="btn">
+                <ul>
+                    <li class="button"><a href="connexion.html" >Connexion</a></li>
+                    <li class ="button2"><a href="inscription.html" >Inscription</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="accueil">
+            <div class="arrow">
+                <i class="fa-solid fa-caret-left"></i>
+            </div>
+            <div class="container">
+                <h1>Strangers things</h1>
+                <p>Quand un jeune garçon disparaît, une  petite ville découvre une affaire mystérieuse, des expériences secrètes, des forces surnaturelles terrifiantes ... et une fillette</p>
+                <div class="classification">
+                    <div class="container border">
+                        <p>SF</p>
+                        <p>Ados</p>
+                        <p>Effrayant</p>
+                    </div>
+                    <div class="container note">
+                        <i class="fa-solid fa-star"></i>
+                        <p>9,1</p>
+                        <p class="age">16+</p>
+                    </div>
+                </div>
+                <div class="saison">
+                    <p>4 saisons</p>
+                    <p class="hd">hd</p>
+                </div>
+                <div class="btn2">
+                    <ul>
+                        <li class="button"><a href="" >Regarder Maintenant</a></li>
+                        <li class="buttonList"><a href="" >Ajouter à votre liste</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="arrow2">
+                <i class="fa-solid fa-caret-right"></i>
+            </div>
+        </div>
+        <div class="carroussel">
+            <div class="point"></div>
+            <div class="point"></div>
+            <div class="point"></div>
+            <div class="point"></div>
+        </div>
+    </header>
+    <!-- main et sorties signées Netflix -->
+    <main>
+        <div class="sorties">
+            <h2>Les dernières sorties signées Netflix</h2>
+            <div class="flexContainer">
+                <img src="img/casa-de-papel.jpg" alt="Affiche de la casa de papel">
+                <div class="container">
+                    <h3>La casa de Papel</h3>
+                    <p>Huit voleurs font une prise d'otage dans la Maison royale de la Monnaie d'Espagne, tandis qu'un génie du crime manipule la police pour mettre son plan à exécution.
+                    </p>
+                    <div class="button">
+                    <a href="">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- parties catalogues -->
+        <div class="catalogue" id="catalogue">
+            <div class="flexContainer">
+                <div class="affiche">
+                    <div class="contentImage">
+                        <img src="img/elite.jpg" alt="affiche série elite">
+                    </div>
+                    <div class="contentImage second">
+                        <img src="img/breaking-bad.jpg" alt="affiche série breaking bad">
+                    </div>
+                    <div class="contentImage">
+                        <img src="img/you.jpeg" alt="affiche série you">
+                    </div>
+                    <div class="contentImage">
+                        <img src="img/squid-game.jpg" alt="affiche série squid game">
+                    </div>
+                    <div class="contentImage five">
+                        <img src="img/mercredi.jpg" alt="affiche serie mercredi">
+                    </div>                   
+                </div>
+            </div>
+            <div class="button">
+                <a href="">Explorer le catalogue</a>
+            </div>
+        </div>
+        <!-- forfaits -->
+        <div class="forfait" id="forfait">
+            <h2>Différents forfaits pour un service sur mesure</h2>
+            <div class="flexContainer">
+                <div class="container">
+                    <h3>Essentiel</h3>
+                    <p class = "price">9.99€ <span class="grey">/mois</span></p>
+                    <p>1 écran simultané</p>
+                    <p>1 appareil pour le téléchargement</p>
+                    <p>Films, séries et jeux en illimités</p>
+                    <p>Netflix sur tous vos appareils</p>
+                    <p><span class="nonActif">HD disponible</span></p>
+                    <p><span class = "nonActif">Ultra HD disponible</span></p>
+                </div>
+                <div class="container">
+                    <h3>Standard</h3>
+                    <p class = "price">13.49€ <span class="grey">/mois</span></p>
+                    <p>2 écrans simultanés</p>
+                    <p>2 appareils pour le téléchargement</p>
+                    <p>Films, séries et jeux en illimités</p>
+                    <p>Netflix sur tous vos appareils</p>
+                    <p>HD disponible</p>
+                    <p><span class = "nonActif">Ultra HD disponible</span></p>
+                </div>
+                <div class="container">
+                    <h3>Premium</h3>
+                    <p class = "price">17.90€ <span class="grey">/mois</span></p>
+                    <p>4 écrans simultanés</p>
+                    <p>4 appareils pour le téléchargement</p>
+                    <p>Films, séries et jeux en illimités</p>
+                    <p>Netflix sur tous vos appareils</p>
+                    <p>HD disponible</p>
+                    <p>Ultra HD disponible</p>
+                </div>
+                
+            </div>
+            <div class="button">
+                <a href="inscription.html">Je m'abonne !</a>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="reseaux">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="flexNav">
+            <div class ="container">
+                <ul>
+                    <li><a href="">Audiodescription</a></li>
+                    <li><a href="">Relations Investisseurs</a></li>
+                    <li><a href="">Confidentialité</a></li>
+                    <li><a href="">Nous contacter</a></li>
+                </ul>
+            </div>
+            <div class ="container">
+                <ul>
+                    <li><a href="">Centre d'aide</a></li>
+                    <li><a href="">Recrutement</a></li>
+                    <li><a href="">Informations légales</a></li>
+                </ul>
+            </div>
+            <div class ="container">
+                <ul>
+                    <li><a href="">Cartes cadeaux</a></li>
+                    <li><a href="">Boutique Netflix</a></li>
+                    <li><a href="">Préférences de cookies</a></li>
+                </ul>
+            </div>
+            <div class ="container">
+                <ul>
+                    <li><a href="">Presse</a></li>
+                    <li><a href="">Conditions d'utilisation</a></li>
+                    <li><a href="">Mentions légales</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mentions">
+            <p>© 1997 - 2023 Netflix Inc </p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
