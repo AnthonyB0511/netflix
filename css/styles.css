@@ -481,7 +481,6 @@ main .gestion {
 main .gestion h1 {
   color: white;
   text-align: center;
-  padding: 3%;
   font-size: 3.5rem;
   padding: 5% 0 5% 0;
 }
@@ -538,7 +537,7 @@ main .gestion .flexContainer .profile a p {
   margin-top: 50%;
 }
 main .btn {
-  padding: 8%;
+  padding: 5%;
   text-align: center;
   width: 40%;
   margin: 0 auto;
