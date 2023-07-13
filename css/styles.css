@@ -483,7 +483,7 @@ main .gestion h1 {
   text-align: center;
   padding: 3%;
   font-size: 3.5rem;
-  padding: 7% 0 5% 0;
+  padding: 5% 0 5% 0;
 }
 main .gestion .flexContainer {
   display: flex;
@@ -696,7 +696,7 @@ main .inscriptionConnexion .navBar {
   display: flex;
   justify-content: space-between;
   transform: rotateY(180deg);
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   padding: 2%;
 }
 main .inscriptionConnexion .navBar .logo {
