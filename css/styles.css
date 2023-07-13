@@ -923,6 +923,9 @@ main .inscriptionConnexion .form form .btnSubmit {
   margin: 0;
 }
 
+.homeRegister {
+  overflow-x: hidden;
+}
 .homeRegister .video {
   position: relative;
 }
